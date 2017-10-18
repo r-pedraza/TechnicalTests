@@ -1,5 +1,5 @@
 //
-//  Copora360Tests.swift
+//  Corpora360Tests.swift
 //  Copora360Tests
 //
 //  Created by Raul Pedraza on 18/10/2017.
@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Copora360
+@testable import Corpora360
 
 class Copora360Tests: XCTestCase {
     

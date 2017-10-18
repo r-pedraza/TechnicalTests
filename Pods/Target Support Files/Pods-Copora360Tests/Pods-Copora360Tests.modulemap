@@ -1,6 +1,0 @@
-framework module Pods_Copora360Tests {
-  umbrella header "Pods-Copora360Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57266CDD1F97F62200757F32 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CDC1F97F62200757F32 /* NewsDetailViewController.swift */; };
+		57266CE21F97F6DE00757F32 /* NewsDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CE11F97F6DE00757F32 /* NewsDetailViewProtocol.swift */; };
+		57266CE51F97F6F700757F32 /* NewsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CE41F97F6F700757F32 /* NewsDetailPresenter.swift */; };
+		57266CE71F97F6FF00757F32 /* NewsDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CE61F97F6FF00757F32 /* NewsDetailPresenterProtocol.swift */; };
+		57266CEA1F97F71200757F32 /* NewsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CE91F97F71200757F32 /* NewsDetailInteractor.swift */; };
+		57266CEC1F97F71900757F32 /* NewsDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CEB1F97F71900757F32 /* NewsDetailInteractorProtocol.swift */; };
+		57266CEF1F97F72D00757F32 /* NewsDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CEE1F97F72D00757F32 /* NewsDetailEntity.swift */; };
+		57266CF21F97F74500757F32 /* NewsDetailRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CF11F97F74500757F32 /* NewsDetailRouting.swift */; };
+		57266CF41F97F74E00757F32 /* NewsDetailRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57266CF31F97F74E00757F32 /* NewsDetailRoutingProtocol.swift */; };
 		572AB22D1F976E6D0081D999 /* NewsResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572AB22C1F976E6D0081D999 /* NewsResults.swift */; };
 		572AB2361F9775610081D999 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572AB2341F9775610081D999 /* NewsTableViewCell.swift */; };
 		572AB2371F9775610081D999 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572AB2351F9775610081D999 /* NewsTableViewCell.xib */; };
@@ -21,6 +30,12 @@
 		578A6D371F975EE600F6FC16 /* SearchNewsResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A6D361F975EE600F6FC16 /* SearchNewsResultsViewController.swift */; };
 		578A6D391F975EF100F6FC16 /* SearchNewsResultsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A6D381F975EF100F6FC16 /* SearchNewsResultsViewProtocol.swift */; };
 		578A6D3C1F9761E100F6FC16 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A6D3B1F9761E100F6FC16 /* APIClient.swift */; };
+		57F1F6A71F97FE61008CB3D0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1F6A61F97FE61008CB3D0 /* Alamofire.framework */; };
+		57F1F6A81F97FE61008CB3D0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1F6A61F97FE61008CB3D0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57F1F6AA1F97FE67008CB3D0 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1F6A91F97FE67008CB3D0 /* AlamofireObjectMapper.framework */; };
+		57F1F6AB1F97FE67008CB3D0 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1F6A91F97FE67008CB3D0 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57F1F6AD1F97FE6D008CB3D0 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1F6AC1F97FE6D008CB3D0 /* ObjectMapper.framework */; };
+		57F1F6AE1F97FE6D008CB3D0 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1F6AC1F97FE6D008CB3D0 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		57FB1DDF1F973D9500472FC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB1DDE1F973D9500472FC7 /* AppDelegate.swift */; };
 		57FB1DE41F973D9500472FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FB1DE21F973D9500472FC7 /* Main.storyboard */; };
 		57FB1DE61F973D9500472FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FB1DE51F973D9500472FC7 /* Assets.xcassets */; };
@@ -35,8 +50,6 @@
 		57FB1E0B1F97463500472FC7 /* SearchNewsRoutingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB1E041F97463500472FC7 /* SearchNewsRoutingProtocol.swift */; };
 		57FB1E0E1F97467E00472FC7 /* SearchNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB1E0D1F97467E00472FC7 /* SearchNewsViewController.swift */; };
 		57FB1E101F97468A00472FC7 /* SearchNewsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB1E0F1F97468A00472FC7 /* SearchNewsViewProtocol.swift */; };
-		DC16802CA04B34AC1176ED65 /* Pods_Copora360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED5067771147CE225291DCF /* Pods_Copora360.framework */; };
-		E743430C713A0B4B8B37FDAB /* Pods_Copora360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E42D64E4C954EE1301CA025 /* Pods_Copora360Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +62,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		57BF75CC1F97F4BC004EB791 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57F1F6AE1F97FE6D008CB3D0 /* ObjectMapper.framework in Embed Frameworks */,
+				57F1F6A81F97FE61008CB3D0 /* Alamofire.framework in Embed Frameworks */,
+				57F1F6AB1F97FE67008CB3D0 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0A7366027C395A1A9FC0C1CB /* Pods-Copora360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3ED5067771147CE225291DCF /* Pods_Copora360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Copora360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57266CDC1F97F62200757F32 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		57266CE11F97F6DE00757F32 /* NewsDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewProtocol.swift; sourceTree = "<group>"; };
+		57266CE41F97F6F700757F32 /* NewsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailPresenter.swift; sourceTree = "<group>"; };
+		57266CE61F97F6FF00757F32 /* NewsDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		57266CE91F97F71200757F32 /* NewsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailInteractor.swift; sourceTree = "<group>"; };
+		57266CEB1F97F71900757F32 /* NewsDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		57266CEE1F97F72D00757F32 /* NewsDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailEntity.swift; sourceTree = "<group>"; };
+		57266CF11F97F74500757F32 /* NewsDetailRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailRouting.swift; sourceTree = "<group>"; };
+		57266CF31F97F74E00757F32 /* NewsDetailRoutingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailRoutingProtocol.swift; sourceTree = "<group>"; };
 		572AB22C1F976E6D0081D999 /* NewsResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResults.swift; sourceTree = "<group>"; };
 		572AB2341F9775610081D999 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		572AB2351F9775610081D999 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
@@ -67,6 +103,9 @@
 		578A6D361F975EE600F6FC16 /* SearchNewsResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsResultsViewController.swift; sourceTree = "<group>"; };
 		578A6D381F975EF100F6FC16 /* SearchNewsResultsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsResultsViewProtocol.swift; sourceTree = "<group>"; };
 		578A6D3B1F9761E100F6FC16 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		57F1F6A61F97FE61008CB3D0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		57F1F6A91F97FE67008CB3D0 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		57F1F6AC1F97FE6D008CB3D0 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		57FB1DDB1F973D9500472FC7 /* Corpora360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corpora360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FB1DDE1F973D9500472FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57FB1DE31F973D9500472FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,10 +124,6 @@
 		57FB1E041F97463500472FC7 /* SearchNewsRoutingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsRoutingProtocol.swift; sourceTree = "<group>"; };
 		57FB1E0D1F97467E00472FC7 /* SearchNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsViewController.swift; sourceTree = "<group>"; };
 		57FB1E0F1F97468A00472FC7 /* SearchNewsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsViewProtocol.swift; sourceTree = "<group>"; };
-		5E42D64E4C954EE1301CA025 /* Pods_Copora360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Copora360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4DE23351B082343A3AE7A4C /* Pods-Copora360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360/Pods-Copora360.debug.xcconfig"; sourceTree = "<group>"; };
-		E68D9D97C253F2B6E2EFE982 /* Pods-Copora360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360.release.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360/Pods-Copora360.release.xcconfig"; sourceTree = "<group>"; };
-		FD9939C7EB611BAC48B718F5 /* Pods-Copora360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC16802CA04B34AC1176ED65 /* Pods_Copora360.framework in Frameworks */,
+				57F1F6AD1F97FE6D008CB3D0 /* ObjectMapper.framework in Frameworks */,
+				57F1F6A71F97FE61008CB3D0 /* Alamofire.framework in Frameworks */,
+				57F1F6AA1F97FE67008CB3D0 /* AlamofireObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,20 +141,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E743430C713A0B4B8B37FDAB /* Pods_Copora360Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0287DE0BEFA74D46C1D6E9D8 /* Frameworks */ = {
+		57266CDE1F97F62700757F32 /* NewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				3ED5067771147CE225291DCF /* Pods_Copora360.framework */,
-				5E42D64E4C954EE1301CA025 /* Pods_Copora360Tests.framework */,
+				57266CE31F97F6E300757F32 /* View */,
+				57266CED1F97F71D00757F32 /* Interactor */,
+				57266CE81F97F70200757F32 /* Presenter */,
+				57266CF01F97F73000757F32 /* Entity */,
+				57266CEE1F97F72D00757F32 /* NewsDetailEntity.swift */,
+				57266CF51F97F75100757F32 /* Routing */,
+				57266CF11F97F74500757F32 /* NewsDetailRouting.swift */,
+				57266CF31F97F74E00757F32 /* NewsDetailRoutingProtocol.swift */,
 			);
-			name = Frameworks;
+			path = NewDetail;
+			sourceTree = "<group>";
+		};
+		57266CE31F97F6E300757F32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57266CDC1F97F62200757F32 /* NewsDetailViewController.swift */,
+				57266CE11F97F6DE00757F32 /* NewsDetailViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57266CE81F97F70200757F32 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57266CE41F97F6F700757F32 /* NewsDetailPresenter.swift */,
+				57266CE61F97F6FF00757F32 /* NewsDetailPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57266CED1F97F71D00757F32 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				57266CE91F97F71200757F32 /* NewsDetailInteractor.swift */,
+				57266CEB1F97F71900757F32 /* NewsDetailInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		57266CF01F97F73000757F32 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		57266CF51F97F75100757F32 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		578A6D1B1F974DCF00F6FC16 /* Resources */ = {
@@ -188,14 +271,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		57BF75D31F97F56B004EB791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		57FB1DD21F973D9500472FC7 = {
 			isa = PBXGroup;
 			children = (
+				57F1F6AC1F97FE6D008CB3D0 /* ObjectMapper.framework */,
+				57F1F6A91F97FE67008CB3D0 /* AlamofireObjectMapper.framework */,
+				57F1F6A61F97FE61008CB3D0 /* Alamofire.framework */,
+				57BF75D31F97F56B004EB791 /* Frameworks */,
 				57FB1DDD1F973D9500472FC7 /* Corpora360 */,
 				57FB1DF21F973D9500472FC7 /* Corpora360Tests */,
 				57FB1DDC1F973D9500472FC7 /* Products */,
-				F253CBA2392ABC99F55B3DA1 /* Pods */,
-				0287DE0BEFA74D46C1D6E9D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,14 +303,15 @@
 		57FB1DDD1F973D9500472FC7 /* Corpora360 */ = {
 			isa = PBXGroup;
 			children = (
+				57FB1E0C1F97463A00472FC7 /* Search */,
+				578A6D311F975EA500F6FC16 /* SearchNewsResults */,
+				57266CDE1F97F62700757F32 /* NewDetail */,
 				57FB1DDE1F973D9500472FC7 /* AppDelegate.swift */,
 				57FB1DE21F973D9500472FC7 /* Main.storyboard */,
 				57FB1DE51F973D9500472FC7 /* Assets.xcassets */,
 				57FB1DE71F973D9500472FC7 /* LaunchScreen.storyboard */,
 				57FB1DEA1F973D9500472FC7 /* Info.plist */,
-				57FB1E0C1F97463A00472FC7 /* Search */,
 				578A6D1B1F974DCF00F6FC16 /* Resources */,
-				578A6D311F975EA500F6FC16 /* SearchNewsResults */,
 			);
 			path = Corpora360;
 			sourceTree = "<group>";
@@ -288,17 +381,6 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		F253CBA2392ABC99F55B3DA1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E4DE23351B082343A3AE7A4C /* Pods-Copora360.debug.xcconfig */,
-				E68D9D97C253F2B6E2EFE982 /* Pods-Copora360.release.xcconfig */,
-				0A7366027C395A1A9FC0C1CB /* Pods-Copora360Tests.debug.xcconfig */,
-				FD9939C7EB611BAC48B718F5 /* Pods-Copora360Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,12 +388,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FB1DF81F973D9500472FC7 /* Build configuration list for PBXNativeTarget "Corpora360" */;
 			buildPhases = (
-				9946DBEF258E25D923CE605B /* [CP] Check Pods Manifest.lock */,
 				57FB1DD71F973D9500472FC7 /* Sources */,
 				57FB1DD81F973D9500472FC7 /* Frameworks */,
 				57FB1DD91F973D9500472FC7 /* Resources */,
-				25D613094776BD94CF5E4C91 /* [CP] Embed Pods Frameworks */,
-				4D88E89E9C15E19BD6F6EA64 /* [CP] Copy Pods Resources */,
+				57BF75CC1F97F4BC004EB791 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,28 +486,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		25D613094776BD94CF5E4C91 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Copora360/Pods-Copora360-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360/Pods-Copora360-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3629172B16CC011260D58B3E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,7 +497,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Copora360Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Corpora360Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,40 +516,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D88E89E9C15E19BD6F6EA64 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360/Pods-Copora360-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9946DBEF258E25D923CE605B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Copora360-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corpora360Tests/Pods-Corpora360Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE94958F1D09281E3C978612 /* [CP] Copy Pods Resources */ = {
@@ -506,7 +531,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Corpora360Tests/Pods-Corpora360Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -516,11 +541,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57266CE21F97F6DE00757F32 /* NewsDetailViewProtocol.swift in Sources */,
 				578A6D2D1F975EA100F6FC16 /* SearchNewsResultsPresenter.swift in Sources */,
 				57FB1E071F97463500472FC7 /* SearchNewsModels.swift in Sources */,
 				578A6D2A1F975EA100F6FC16 /* SearchNewsResultsInteractor.swift in Sources */,
+				57266CF21F97F74500757F32 /* NewsDetailRouting.swift in Sources */,
 				578A6D3C1F9761E100F6FC16 /* APIClient.swift in Sources */,
 				578A6D391F975EF100F6FC16 /* SearchNewsResultsViewProtocol.swift in Sources */,
+				57266CEC1F97F71900757F32 /* NewsDetailInteractorProtocol.swift in Sources */,
+				57266CE51F97F6F700757F32 /* NewsDetailPresenter.swift in Sources */,
 				578A6D2B1F975EA100F6FC16 /* SearchNewsResultsInteractorProtocol.swift in Sources */,
 				578A6D2E1F975EA100F6FC16 /* SearchNewsResultsPresenterProtocol.swift in Sources */,
 				57FB1E0E1F97467E00472FC7 /* SearchNewsViewController.swift in Sources */,
@@ -528,11 +557,16 @@
 				57FB1DDF1F973D9500472FC7 /* AppDelegate.swift in Sources */,
 				57FB1E081F97463500472FC7 /* SearchNewsPresenter.swift in Sources */,
 				572AB22D1F976E6D0081D999 /* NewsResults.swift in Sources */,
+				57266CF41F97F74E00757F32 /* NewsDetailRoutingProtocol.swift in Sources */,
 				57FB1E061F97463500472FC7 /* SearchNewsInteractorProtocol.swift in Sources */,
 				57FB1E051F97463500472FC7 /* SearchNewsInteractor.swift in Sources */,
 				57FB1E101F97468A00472FC7 /* SearchNewsViewProtocol.swift in Sources */,
+				57266CEF1F97F72D00757F32 /* NewsDetailEntity.swift in Sources */,
+				57266CEA1F97F71200757F32 /* NewsDetailInteractor.swift in Sources */,
 				578A6D2C1F975EA100F6FC16 /* SearchNewsResults.swift in Sources */,
+				57266CDD1F97F62200757F32 /* NewsDetailViewController.swift in Sources */,
 				57FB1E091F97463500472FC7 /* SearchNewsPresenterProtocol.swift in Sources */,
+				57266CE71F97F6FF00757F32 /* NewsDetailPresenterProtocol.swift in Sources */,
 				578A6D371F975EE600F6FC16 /* SearchNewsResultsViewController.swift in Sources */,
 				578A6D2F1F975EA100F6FC16 /* SearchNewsResultsRouting.swift in Sources */,
 				578A6D301F975EA100F6FC16 /* SearchNewsResultsRoutingProtocol.swift in Sources */,
@@ -697,13 +731,16 @@
 		};
 		57FB1DF91F973D9500472FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4DE23351B082343A3AE7A4C /* Pods-Copora360.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Copora360/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Corpora360/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Copora360;
+				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Corpora360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -712,13 +749,16 @@
 		};
 		57FB1DFA1F973D9500472FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E68D9D97C253F2B6E2EFE982 /* Pods-Copora360.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Copora360/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Corpora360/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Copora360;
+				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Corpora360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -727,14 +767,13 @@
 		};
 		57FB1DFC1F973D9500472FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A7366027C395A1A9FC0C1CB /* Pods-Copora360Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Copora360Tests/Info.plist;
+				INFOPLIST_FILE = Corpora360Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Copora360Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Corpora360Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -744,14 +783,13 @@
 		};
 		57FB1DFD1F973D9500472FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD9939C7EB611BAC48B718F5 /* Pods-Copora360Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Copora360Tests/Info.plist;
+				INFOPLIST_FILE = Corpora360Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Copora360Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = RaulPedrazaLeon.Corpora360Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

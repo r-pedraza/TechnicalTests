@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Copora360
+//  Corpora360
 //
 //  Created by Raul Pedraza on 18/10/2017.
 //  Copyright © 2017 Raul Pedraza. All rights reserved.
