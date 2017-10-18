@@ -22,7 +22,9 @@ class SearchNewsRouting: SearchNewsRoutingProtocol {
     }
     
     func goToSearchNewsResults() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SearchNewsResultsViewControllerID")
+        navigationController.pushViewController(controller, animated: true)
     }
   
 }
