@@ -12,37 +12,74 @@
         <!--Search News View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchNewsViewController" customModule="Copora360" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchNewsViewController" customModule="Corpora360" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="7gK-4B-4sx">
-                                <rect key="frame" x="0.0" y="84" width="375" height="240"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="286"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-qJ-gvj">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
-                                        <state key="normal" title="Opción 1"/>
-                                        <connections>
-                                            <action selector="didTapInFirstOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmm-5Y-hNH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFO-pA-zIf">
-                                        <rect key="frame" x="0.0" y="70" width="375" height="30"/>
-                                        <state key="normal" title="Opción 2"/>
-                                        <connections>
-                                            <action selector="didTapInSecondOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEP-Ou-X5H"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6X-Wd-HHp">
-                                        <rect key="frame" x="0.0" y="140" width="375" height="30"/>
-                                        <state key="normal" title="Opción 3"/>
-                                        <connections>
-                                            <action selector="didTapInThreeOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AD6-xn-Md3"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SyE-5D-6rP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-qJ-gvj">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Opción 1"/>
+                                                <connections>
+                                                    <action selector="didTapInFirstOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmm-5Y-hNH"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-dT-sH7">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tJW-fr-tUq">
+                                        <rect key="frame" x="0.0" y="90" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFO-pA-zIf">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Opción 2"/>
+                                                <connections>
+                                                    <action selector="didTapInSecondOptionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEP-Ou-X5H"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="3CB-RS-axG">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U9I-Gc-Ule">
+                                        <rect key="frame" x="0.0" y="180" width="375" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6X-Wd-HHp">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
+                                                <state key="normal" title="Facebook"/>
+                                                <connections>
+                                                    <action selector="didTapInFacebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IbE-gS-KqH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mki-D7-G7x">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="30"/>
+                                                <state key="normal" title="Twitter"/>
+                                                <connections>
+                                                    <action selector="didTapInTwitterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cw9-qe-m1s"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDA-wj-6lG">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="250" width="375" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Buscar"/>
                                         <connections>
                                             <action selector="didTapInSearchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfQ-Jb-bsI"/>
@@ -80,11 +117,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="nOe-8F-PcD"/>
                     <connections>
+                        <outlet property="facebookButton" destination="Q6X-Wd-HHp" id="mJ0-RB-sQw"/>
+                        <outlet property="firstOptionLabel" destination="XMG-dT-sH7" id="Hko-O7-f2N"/>
                         <outlet property="pickerView" destination="stc-25-Mui" id="wxA-2S-bKu"/>
                         <outlet property="searchFirstOptionButton" destination="HWy-qJ-gvj" id="kkT-uG-h9h"/>
                         <outlet property="searchSecondOptionButton" destination="jFO-pA-zIf" id="HCZ-Ik-UAP"/>
-                        <outlet property="searchThreeOptionButton" destination="Q6X-Wd-HHp" id="gCc-0b-SGi"/>
+                        <outlet property="secondOptionLabel" destination="3CB-RS-axG" id="dMb-fL-IjD"/>
                         <outlet property="toolbar" destination="3sV-DB-q3I" id="ofv-eo-ciZ"/>
+                        <outlet property="twitterButton" destination="Mki-D7-G7x" id="Ngd-w3-cFQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,12 +134,12 @@
         <!--Search News Results View Controller-->
         <scene sceneID="sec-6l-B2o">
             <objects>
-                <viewController storyboardIdentifier="SearchNewsResultsViewControllerID" id="1zC-tT-tRD" customClass="SearchNewsResultsViewController" customModule="Copora360" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchNewsResultsViewControllerID" id="1zC-tT-tRD" customClass="SearchNewsResultsViewController" customModule="Corpora360" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KK7-Oh-4ZN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eMw-aN-gin">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eMw-aN-gin">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -120,6 +160,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UW5-b2-HGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1255" y="-117"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="70N-Gf-JGh">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailViewControllerID" id="JRO-UQ-QI8" customClass="NewsDetailViewController" customModule="Corpora360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nmj-k7-NjP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlE-Cg-nwP">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yy-EW-Vh4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="done" systemItem="done" id="SjV-e5-Oju">
+                                        <connections>
+                                            <action selector="didTapInDoneButton:" destination="JRO-UQ-QI8" id="cbL-lv-cUd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WlE-Cg-nwP" firstAttribute="leading" secondItem="Ftl-t5-vqB" secondAttribute="leading" id="7cj-ZK-okt"/>
+                            <constraint firstItem="1yy-EW-Vh4" firstAttribute="trailing" secondItem="Ftl-t5-vqB" secondAttribute="trailing" id="8dZ-O1-WJ6"/>
+                            <constraint firstItem="1yy-EW-Vh4" firstAttribute="top" secondItem="Nmj-k7-NjP" secondAttribute="top" id="8eX-tn-qbV"/>
+                            <constraint firstItem="1yy-EW-Vh4" firstAttribute="leading" secondItem="Ftl-t5-vqB" secondAttribute="leading" id="cK1-3o-8ks"/>
+                            <constraint firstItem="Ftl-t5-vqB" firstAttribute="bottom" secondItem="WlE-Cg-nwP" secondAttribute="bottom" id="hmP-gx-QfE"/>
+                            <constraint firstItem="WlE-Cg-nwP" firstAttribute="top" secondItem="1yy-EW-Vh4" secondAttribute="bottom" id="rti-nF-vaH"/>
+                            <constraint firstItem="Ftl-t5-vqB" firstAttribute="trailing" secondItem="WlE-Cg-nwP" secondAttribute="trailing" id="vEk-6S-N1H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ftl-t5-vqB"/>
+                    </view>
+                    <connections>
+                        <outlet property="wkWebView" destination="WlE-Cg-nwP" id="7wW-yE-38d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IC-9j-M5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917.5999999999999" y="-117.39130434782609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wip-nW-sTN">
