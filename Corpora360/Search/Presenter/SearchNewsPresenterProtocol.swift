@@ -7,4 +7,5 @@ protocol SearchNewsPresenterProtocol {
     func title(forRow: Int) -> String
     func update(with tag: Int, row: Int)
     func goToSearchNewsResults()
+    func setup()
 }

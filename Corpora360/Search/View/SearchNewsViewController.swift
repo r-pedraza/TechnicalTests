@@ -6,7 +6,10 @@ class SearchNewsViewController: UIViewController, SearchNewsViewProtocol {
 
     @IBOutlet weak var searchFirstOptionButton: UIButton!
     @IBOutlet weak var searchSecondOptionButton: UIButton!
-    @IBOutlet weak var searchThreeOptionButton: UIButton!
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var twitterButton: UIButton!
+    @IBOutlet weak var firstOptionLabel: UILabel!
+    @IBOutlet weak var secondOptionLabel: UILabel!
     
     @IBOutlet weak var pickerView: UIPickerView!
     
@@ -23,19 +26,25 @@ class SearchNewsViewController: UIViewController, SearchNewsViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        presenter.setup()
     }
     
     // MARK: Private Methods
     
     private func setupUI() {
-        title = NSLocalizedString("search_news_title", comment: "")
+        title = "Search News"
         searchFirstOptionButton.tag = 1
         searchSecondOptionButton.tag = 2
-        searchThreeOptionButton.tag = 2
+        searchFirstOptionButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        searchSecondOptionButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        facebookButton.tag = 3
+        twitterButton.tag = 4
         pickerView.dataSource = self
         pickerView.delegate = self
         pickerView.isHidden = true
         toolbar.isHidden = true
+        facebookButton.isHidden = true
+        twitterButton.isHidden = true
     }
     
     // MARK: Actions
@@ -48,7 +57,11 @@ class SearchNewsViewController: UIViewController, SearchNewsViewProtocol {
         presenter?.didTapInButton(with: sender)
     }
     
-    @IBAction func didTapInThreeOptionButton(_ sender: UIButton) {
+    @IBAction func didTapInFacebookButton(_ sender: UIButton) {
+        presenter?.didTapInButton(with: sender)
+    }
+    
+    @IBAction func didTapInTwitterButton(_ sender: UIButton) {
         presenter?.didTapInButton(with: sender)
     }
     
@@ -75,6 +88,30 @@ class SearchNewsViewController: UIViewController, SearchNewsViewProtocol {
         return toolbar
     }
     
+    var firstOptionButtonReference: UIButton {
+        return searchFirstOptionButton
+    }
+    
+    var secondOptionButtonReference: UIButton {
+        return searchSecondOptionButton
+    }
+    
+    var facebookButtonReference: UIButton {
+        return facebookButton
+    }
+    
+    var twitterButtonReference: UIButton {
+        return twitterButton
+    }
+    
+    var firstOptionLabelReference: UILabel {
+        return firstOptionLabel
+    }
+    
+    var secondOptionLabelReference: UILabel {
+        return secondOptionLabel
+    }
+
 }
 
 extension SearchNewsViewController: UIPickerViewDataSource, UIPickerViewDelegate {

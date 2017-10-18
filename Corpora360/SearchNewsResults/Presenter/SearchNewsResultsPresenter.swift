@@ -25,5 +25,12 @@ class SearchNewsResultsPresenter: SearchNewsResultsPresenterProtocol {
         cell.titleLabel.text = new.title
         return cell
     }
+    
+    func didSelectRow(at indexPath: IndexPath) {
+        let newsDetail = news[indexPath.row]
+        if let url = newsDetail.url {
+            routing.presentWebView(with: url)
+        }
+    }
 }
 

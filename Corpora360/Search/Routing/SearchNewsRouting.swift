@@ -10,6 +10,16 @@ class SearchNewsRouting: SearchNewsRoutingProtocol {
         setup()
     }
     
+    // MARK: SearchNewsRoutingProtocol
+    
+    func goToSearchNewsResults() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SearchNewsResultsViewControllerID")
+        navigationController.pushViewController(controller, animated: true)
+    }
+    
+    // MARK: Private methods
+    
     private func setup() {
         let interactor = SearchNewsInteractor()
         let presenter = SearchNewsPresenter()
@@ -19,11 +29,5 @@ class SearchNewsRouting: SearchNewsRoutingProtocol {
         presenter.routing = self
         viewController.presenter = presenter
     }
-    
-    func goToSearchNewsResults() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "SearchNewsResultsViewControllerID")
-        navigationController.pushViewController(controller, animated: true)
-    }
-  
+
 }

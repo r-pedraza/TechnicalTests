@@ -5,4 +5,5 @@ protocol SearchNewsResultsPresenterProtocol {
     var numberOfRowsInSection: Int { get }
     func reloadData(with newsResults: [SearchNewsResults])
     func setupCell(with tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
+    func didSelectRow(at indexPath: IndexPath)
 }

@@ -15,6 +15,7 @@ class SearchNewsResultsViewController: UIViewController, SearchNewsResultsViewPr
     }
     
     func setupUI() {
+        title = "Search Results"
         tableView.delegate = self
         tableView.dataSource = self
         let nib = UINib(nibName: "NewsTableViewCell", bundle: nil)
@@ -41,6 +42,6 @@ extension SearchNewsResultsViewController: UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        presenter.didSelectRow(at: indexPath)
     }
 }
