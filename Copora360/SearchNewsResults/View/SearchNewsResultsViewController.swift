@@ -1,7 +1,7 @@
 import UIKit
 
-class SearchNewsResultsViewController: UIViewController, SearchResultsViewProtocol {
-    var presenter: SearchResultsPresenterProtocol!
+class SearchNewsResultsViewController: UIViewController, SearchNewsResultsViewProtocol {
+    var presenter: SearchNewsResultsPresenterProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
