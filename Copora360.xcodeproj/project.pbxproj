@@ -13,6 +13,8 @@
 		57FB1DE61F973D9500472FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FB1DE51F973D9500472FC7 /* Assets.xcassets */; };
 		57FB1DE91F973D9500472FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FB1DE71F973D9500472FC7 /* LaunchScreen.storyboard */; };
 		57FB1DF41F973D9500472FC7 /* Copora360Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FB1DF31F973D9500472FC7 /* Copora360Tests.swift */; };
+		DC16802CA04B34AC1176ED65 /* Pods_Copora360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED5067771147CE225291DCF /* Pods_Copora360.framework */; };
+		E743430C713A0B4B8B37FDAB /* Pods_Copora360Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E42D64E4C954EE1301CA025 /* Pods_Copora360Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7366027C395A1A9FC0C1CB /* Pods-Copora360Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3ED5067771147CE225291DCF /* Pods_Copora360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Copora360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FB1DDB1F973D9500472FC7 /* Copora360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copora360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FB1DDE1F973D9500472FC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57FB1DE01F973D9500472FC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		57FB1DEF1F973D9500472FC7 /* Copora360Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Copora360Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FB1DF31F973D9500472FC7 /* Copora360Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copora360Tests.swift; sourceTree = "<group>"; };
 		57FB1DF51F973D9500472FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E42D64E4C954EE1301CA025 /* Pods_Copora360Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Copora360Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DE23351B082343A3AE7A4C /* Pods-Copora360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360/Pods-Copora360.debug.xcconfig"; sourceTree = "<group>"; };
+		E68D9D97C253F2B6E2EFE982 /* Pods-Copora360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360.release.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360/Pods-Copora360.release.xcconfig"; sourceTree = "<group>"; };
+		FD9939C7EB611BAC48B718F5 /* Pods-Copora360Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Copora360Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC16802CA04B34AC1176ED65 /* Pods_Copora360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E743430C713A0B4B8B37FDAB /* Pods_Copora360Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0287DE0BEFA74D46C1D6E9D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5067771147CE225291DCF /* Pods_Copora360.framework */,
+				5E42D64E4C954EE1301CA025 /* Pods_Copora360Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57FB1DD21F973D9500472FC7 = {
 			isa = PBXGroup;
 			children = (
 				57FB1DDD1F973D9500472FC7 /* Copora360 */,
 				57FB1DF21F973D9500472FC7 /* Copora360Tests */,
 				57FB1DDC1F973D9500472FC7 /* Products */,
+				F253CBA2392ABC99F55B3DA1 /* Pods */,
+				0287DE0BEFA74D46C1D6E9D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = Copora360Tests;
 			sourceTree = "<group>";
 		};
+		F253CBA2392ABC99F55B3DA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4DE23351B082343A3AE7A4C /* Pods-Copora360.debug.xcconfig */,
+				E68D9D97C253F2B6E2EFE982 /* Pods-Copora360.release.xcconfig */,
+				0A7366027C395A1A9FC0C1CB /* Pods-Copora360Tests.debug.xcconfig */,
+				FD9939C7EB611BAC48B718F5 /* Pods-Copora360Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FB1DF81F973D9500472FC7 /* Build configuration list for PBXNativeTarget "Copora360" */;
 			buildPhases = (
+				9946DBEF258E25D923CE605B /* [CP] Check Pods Manifest.lock */,
 				57FB1DD71F973D9500472FC7 /* Sources */,
 				57FB1DD81F973D9500472FC7 /* Frameworks */,
 				57FB1DD91F973D9500472FC7 /* Resources */,
+				25D613094776BD94CF5E4C91 /* [CP] Embed Pods Frameworks */,
+				4D88E89E9C15E19BD6F6EA64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FB1DFB1F973D9500472FC7 /* Build configuration list for PBXNativeTarget "Copora360Tests" */;
 			buildPhases = (
+				3629172B16CC011260D58B3E /* [CP] Check Pods Manifest.lock */,
 				57FB1DEB1F973D9500472FC7 /* Sources */,
 				57FB1DEC1F973D9500472FC7 /* Frameworks */,
 				57FB1DED1F973D9500472FC7 /* Resources */,
+				38B9E362B3181D4FE6B1D8E2 /* [CP] Embed Pods Frameworks */,
+				AE94958F1D09281E3C978612 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25D613094776BD94CF5E4C91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Copora360/Pods-Copora360-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360/Pods-Copora360-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3629172B16CC011260D58B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Copora360Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38B9E362B3181D4FE6B1D8E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D88E89E9C15E19BD6F6EA64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360/Pods-Copora360-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9946DBEF258E25D923CE605B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Copora360-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE94958F1D09281E3C978612 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Copora360Tests/Pods-Copora360Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57FB1DD71F973D9500472FC7 /* Sources */ = {
@@ -351,6 +491,7 @@
 		};
 		57FB1DF91F973D9500472FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DE23351B082343A3AE7A4C /* Pods-Copora360.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +506,7 @@
 		};
 		57FB1DFA1F973D9500472FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68D9D97C253F2B6E2EFE982 /* Pods-Copora360.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +521,7 @@
 		};
 		57FB1DFC1F973D9500472FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A7366027C395A1A9FC0C1CB /* Pods-Copora360Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -395,6 +538,7 @@
 		};
 		57FB1DFD1F973D9500472FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9939C7EB611BAC48B718F5 /* Pods-Copora360Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
