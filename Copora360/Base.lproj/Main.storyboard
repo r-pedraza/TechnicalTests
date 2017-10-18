@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="550" y="-117"/>
         </scene>
-        <!--View Controller-->
+        <!--Search News Results View Controller-->
         <scene sceneID="sec-6l-B2o">
             <objects>
-                <viewController id="1zC-tT-tRD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchNewsResultsViewControllerID" id="1zC-tT-tRD" customClass="SearchNewsResultsViewController" customModule="Corpora360" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KK7-Oh-4ZN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
