@@ -1,12 +1,10 @@
 import UIKit
 
 class SearchNewsResultsRouting: SearchNewsResultsRoutingProtocol {
-    var navigationController: UINavigationController?
     var viewController: SearchNewsResultsViewController!
 
     
-    init(navigationController: UINavigationController, viewController: SearchNewsResultsViewController) {
-        self.navigationController = navigationController
+    init(viewController: SearchNewsResultsViewController) {
         self.viewController = viewController
         setup()
     }

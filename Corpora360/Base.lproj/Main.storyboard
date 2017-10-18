@@ -12,7 +12,7 @@
         <!--Search News View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SearchNewsViewController" customModule="Corpora360" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchNewsViewController" customModule="Copora360" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
         <!--Search News Results View Controller-->
         <scene sceneID="sec-6l-B2o">
             <objects>
-                <viewController storyboardIdentifier="SearchNewsResultsViewControllerID" id="1zC-tT-tRD" customClass="SearchNewsResultsViewController" customModule="Corpora360" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchNewsResultsViewControllerID" id="1zC-tT-tRD" customClass="SearchNewsResultsViewController" customModule="Copora360" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KK7-Oh-4ZN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +113,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c1t-hE-aUa"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="eMw-aN-gin" id="29i-y6-LVM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UW5-b2-HGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,7 +10,6 @@ class SearchNewsRouting: SearchNewsRoutingProtocol {
         setup()
     }
     
-    
     private func setup() {
         let interactor = SearchNewsInteractor()
         let presenter = SearchNewsPresenter()
