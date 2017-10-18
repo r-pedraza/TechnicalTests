@@ -1,19 +1,10 @@
-import UIKit
+import Foundation
 
-enum SearchNewsResults
-{
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
+struct SearchNewsResults: Codable {
+    let url: String
+    let title: title
+    
+    func encode(to encoder: Encoder) throws {
+        
     }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
 }
