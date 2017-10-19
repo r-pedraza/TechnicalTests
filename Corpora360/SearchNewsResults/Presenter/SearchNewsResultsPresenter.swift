@@ -5,6 +5,11 @@ class SearchNewsResultsPresenter: SearchNewsResultsPresenterProtocol {
     var interactor: SearchNewsResultsInteractorProtocol!
     var routing: SearchNewsResultsRoutingProtocol!
     var news = [SearchNewsResults]()
+    var factoryCell: TableCellFactory!
+    
+    func setup() {
+        factoryCell = TableCellFactory(tableView: view.tableViewreference)
+    }
     
     var numberOfSections: Int {
         return 1
@@ -21,8 +26,7 @@ class SearchNewsResultsPresenter: SearchNewsResultsPresenterProtocol {
     
     func setupCell(with tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         let new = news[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCellID", for: indexPath) as? NewsTableViewCell else { return UITableViewCell()}
-        cell.titleLabel.text = new.title
+        let cell: NewsTableViewCell = factoryCell.createCell(viewModel: new, indexPath: indexPath)
         return cell
     }
     

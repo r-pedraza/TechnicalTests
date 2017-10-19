@@ -12,14 +12,14 @@ class SearchNewsResultsViewController: UIViewController, SearchNewsResultsViewPr
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        presenter.setup()
     }
     
     func setupUI() {
         title = "Search Results"
         tableView.delegate = self
         tableView.dataSource = self
-        let nib = UINib(nibName: "NewsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "NewsTableViewCellID")
+        tableView.register(NewsTableViewCell.self)
     }
     
     var tableViewreference: UITableView {

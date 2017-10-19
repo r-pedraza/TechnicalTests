@@ -1,7 +1,7 @@
 import Foundation
 import ObjectMapper
 
-class SearchNewsResults: Mappable {
+class SearchNewsResults: Mappable, ViewModel {
    
     var url: String?
     var title: String?

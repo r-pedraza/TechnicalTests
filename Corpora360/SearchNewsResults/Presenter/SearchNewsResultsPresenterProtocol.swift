@@ -6,4 +6,5 @@ protocol SearchNewsResultsPresenterProtocol {
     func reloadData(with newsResults: [SearchNewsResults])
     func setupCell(with tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
     func didSelectRow(at indexPath: IndexPath)
+    func setup()
 }

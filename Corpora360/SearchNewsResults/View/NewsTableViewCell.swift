@@ -1,10 +1,10 @@
 import UIKit
 
-class NewsTableViewCell: UITableViewCell {
+class NewsTableViewCell: BaseTableViewCell<SearchNewsResults> {
 
     @IBOutlet weak var titleLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func setupGUI() {
+        titleLabel.text = viewModel.title
     }
 }
